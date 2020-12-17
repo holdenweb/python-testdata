@@ -7,8 +7,7 @@ from .generic import Constant
 class StatisticalPercentageFactory(Factory):
     """
     Returns a different value a precentage of a time.
-    :param factories: a list of 2 item tuples. each tuple contains The Factory that its result should be returned as the first item,
-                                            and the chance of that value returning (in precents) as the second.
+    :param factories: a list of (factory, percentage) tuples. The given factory will be called with the given percentage probability.
     Note:
     The sum of all precentages should be 100.
     Examples:
